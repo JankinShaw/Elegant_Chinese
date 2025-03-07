@@ -53,8 +53,8 @@
 /* Assumed from min-width: 80px */
 html {
   font-family: "Palatino", "DFPBiaoKaiShu-B5", sans-serif; /* Times for Cyrillic, Hiragino to prevent Japanese displaying in Kaku "Hiragino Mincho ProN", "ヒラギノ明朝 ProN" */ 
-  font-size: 28px !important; /* Overridden by responsive font sizing */
-  line-height: 2 !important; /* 1.6316 = 31px @ font-size: 19px */
+  font-size: 20px !important; /* Overridden by responsive font sizing */
+  line-height: 1.8 !important; /* 1.6316 = 31px @ font-size: 19px */
 }
 
 /* Only justify on iPhone 6 and above */
@@ -66,54 +66,46 @@ html {
   }
 }
 
-@media screen and (min-width: 1080px) {
-    html {
-      font-size: 28px;
-    }
+/* Responsive adjustments */
+html {
+    font-size: 20px; /* Set a good base font size */
+    line-height: 1.8; /* Adjust line spacing for better readability */
   }
   
-  @media screen and (min-width: 1440px) {
-    html {
-      font-size: 32px;
-    }
-  }
-  
-  @media screen and (min-width: 1920px) {
-    html {
-      font-size: 36px;
-    }
-  }
-
-  @media screen and (min-width: 500px) {
-    html {
-      font-size: 20px;
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
+  /* Adjust for mid-size screens (MacBook Air, 13-inch screens) */
+  @media screen and (min-width: 1080px) {
     html {
       font-size: 22px;
     }
   }
   
-  @media screen and (min-width: 920px) {
+  /* Adjust for larger MacBook Pro screens */
+  @media screen and (min-width: 1440px) {
     html {
       font-size: 24px;
     }
   }
-
+  
+  /* For ultra-wide screens (large external monitors) */
+  @media screen and (min-width: 1920px) {
+    html {
+      font-size: 26px;
+    }
+  }
+  
+  /* Limit the width of text blocks for comfortable reading */
   @media screen and (min-width: 1080px) {
     body {
-      max-width: 900px; /* Give text more space to expand */
+      max-width: 800px; /* Slightly smaller than before */
     }
   }
   
   @media screen and (min-width: 1440px) {
     body {
-      max-width: 1100px;
+      max-width: 900px;
     }
   }
-
+  
 h1,
 h2,
 h3,
