@@ -1,0 +1,21 @@
+body {
+    font-family: "Times New Roman", "DFPBiaoKaiShu-B5", serif;
+}
+
+/* Ensure correct font usage for Chinese */
+@font-face {
+    font-family: "DFPBiaoKaiShu-B5";
+    src: url("DFPBiaoKaiShu-B5.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply the font to Chinese text */
+html:lang(zh) body {
+    font-family: "DFPBiaoKaiShu-B5", serif;
+}
+
+
+html:lang(en) body {
+    font-family: "Times New Roman", serif;
+}
