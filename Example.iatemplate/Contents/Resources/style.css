@@ -53,8 +53,8 @@
 /* Assumed from min-width: 80px */
 html {
   font-family: "Palatino", "DFPBiaoKaiShu-B5", sans-serif; /* Times for Cyrillic, Hiragino to prevent Japanese displaying in Kaku "Hiragino Mincho ProN", "ヒラギノ明朝 ProN" */ 
-  font-size: 1px; /* Overridden by responsive font sizing */
-  line-height: calc(31 / 19); /* 1.6316 = 31px @ font-size: 19px */
+  font-size: 28px !important; /* Overridden by responsive font sizing */
+  line-height: 2 !important; /* 1.6316 = 31px @ font-size: 19px */
 }
 
 /* Only justify on iPhone 6 and above */
@@ -66,240 +66,53 @@ html {
   }
 }
 
-/* Responsive adjustments */
-
-@media screen and (min-width: 81px) {
-  html {
-    font-size: 1.1px;
-  }
-}
-
-@media screen and (min-width: 82px) {
-  html {
-    font-size: 1.2px;
-  }
-}
-
-@media screen and (min-width: 83px) {
-  html {
-    font-size: 1.3px;
-  }
-}
-
-@media screen and (min-width: 84px) {
-  html {
-    font-size: 1.4px;
-  }
-}
-
-@media screen and (min-width: 85px) {
-  html {
-    font-size: 1.5px;
-  }
-}
-
-@media screen and (min-width: 88px) {
-  html {
-    font-size: 1.7px;
-  }
-}
-
-@media screen and (min-width: 90px) {
-  html {
-    font-size: 1.85px;
-  }
-}
-
-@media screen and (min-width: 92px) {
-  html {
-    font-size: 2px;
-  }
-}
-
-@media screen and (min-width: 97px) {
-  html {
-    font-size: 2.5px;
-  }
-}
-
-@media screen and (min-width: 105px) {
-  html {
-    font-size: 3px;
-  }
-}
-
-@media screen and (min-width: 114px) {
-  html {
-    font-size: 3.5px;
-  }
-}
-
-@media screen and (min-width: 120px) {
-  html {
-    font-size: 4px;
-  }
-}
-
-@media screen and (min-width: 135px) {
-  html {
-    font-size: 5px;
-  }
-}
-
-@media screen and (min-width: 150px) {
-  html {
-    font-size: 6px;
-  }
-}
-
-@media screen and (min-width: 165px) {
-  html {
-    font-size: 7px;
-  }
-}
-
-@media screen and (min-width: 180px) {
-  html {
-    font-size: 8px;
-  }
-
-  .mac {
-    font-size: 7px;
-  }
-}
-
-@media screen and (min-width: 200px) {
-  html {
-    font-size: 9px;
-  }
-}
-
-
-@media screen and (min-width: 200px) and (min-device-width: 1152px) {
-  html {
-    font-size: 8px;
-  }
-}
-
-@media screen and (min-width: 220px) {
-  html {
-    font-size: 10px;
-  }
-
-  .mac {
-    font-size: 9px;
-  }
-}
-
-@media screen and (min-width: 240px) {
-  html {
-    font-size: 11px;
-  }
-
-  .mac {
-    font-size: 9px;
-  }
-}
-
-@media screen and (min-width: 260px) {
-  html {
-    font-size: 12px;
-  }
-
-  .mac {
-    font-size: 10px;
-  }
-}
-
-@media screen and (min-width: 280px) {
-  html {
-    font-size: 13px;
-  }
-
-  .mac {
-    font-size: 11px;
-  }
-}
-
-@media screen and (min-width: 300px) {
-  html {
-    font-size: 14px;
-  }
-
-  .mac {
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  /* 15px @320 for iPhone 5 */
-  html {
-    font-size: 15px;
-  }
-
-  .mac {
-    font-size: 13px;
-  }
-}
-
-@media screen and (min-width: 414px) {
-  /* For iPhone 6+ */
-  html {
-    font-size: 16px;
-  }
-
-  .mac {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width: 640px) {
-  html {
-    font-size: 16.5px;
-  }
-
-  .mac {
-    font-size: 15px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  /* For iPad */
-  html {
-    font-size: 17px;
-  }
-
-  .mac {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width: 920px) {
-  html {
-    font-size: 18px;
-  }
-
-  .mac {
-    font-size: 17px;
-  }
-}
-
-/* For widescreen */
 @media screen and (min-width: 1080px) {
-  html {
-    font-size: 19px;
+    html {
+      font-size: 28px;
+    }
   }
-}
-
-body {
-  max-width: 37.5em;
-}
-
-@media screen and (min-width: 1080px) {
-  body {
-    max-width: 705px;
+  
+  @media screen and (min-width: 1440px) {
+    html {
+      font-size: 32px;
+    }
   }
-}
+  
+  @media screen and (min-width: 1920px) {
+    html {
+      font-size: 36px;
+    }
+  }
+
+  @media screen and (min-width: 500px) {
+    html {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    html {
+      font-size: 22px;
+    }
+  }
+  
+  @media screen and (min-width: 920px) {
+    html {
+      font-size: 24px;
+    }
+  }
+
+  @media screen and (min-width: 1080px) {
+    body {
+      max-width: 900px; /* Give text more space to expand */
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    body {
+      max-width: 1100px;
+    }
+  }
 
 h1,
 h2,
