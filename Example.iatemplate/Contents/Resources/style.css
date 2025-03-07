@@ -52,7 +52,7 @@
 
 /* Assumed from min-width: 80px */
 html {
-  font-family: "Avenir Next", "Georgia", Keyboard, Times, "DFPBiaoKaiShu-B5", "DFPBiaoKaiShu-B5", serif; /* Times for Cyrillic, Hiragino to prevent Japanese displaying in Kaku "Hiragino Mincho ProN", "ヒラギノ明朝 ProN" */ 
+  font-family: "Palatino", "DFPBiaoKaiShu-B5", sans-serif; /* Times for Cyrillic, Hiragino to prevent Japanese displaying in Kaku "Hiragino Mincho ProN", "ヒラギノ明朝 ProN" */ 
   font-size: 1px; /* Overridden by responsive font sizing */
   line-height: calc(31 / 19); /* 1.6316 = 31px @ font-size: 19px */
 }
